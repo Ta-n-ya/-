@@ -35,7 +35,7 @@
           <form action="http://fe.it-academy.by/TestForm.php" method="post">
             <fieldset>
               <legend>Строка поиска</legend>
-              <input type="search" name="poisk" />
+              <input type="search" name="poisk"maxlength="10" />
               <input type="submit" value="Искать" /><br />
               <input
                 type="radio"
@@ -60,7 +60,7 @@
               <input
                 type="search"
                 name="poisk"
-                placeholder="это обязательное поле"
+                autofocus
                 required
               />&#42; <input type="submit" value="Искать" /><br />
               <input
@@ -124,6 +124,7 @@
               <input type="radio" name="opros" value="well" /> хорошо<br />
               <input type="radio" name="opros" value="super" /> супер<br />
               <input type="submit" value="Отправить" /><br />
+              <input type="hidden"name=date_voite, value="2013.12.31">
               <em>Есть скрытое поле</em><br />
               <em>name=date_voite, value="2013.12.31"</em>
             </fieldset>

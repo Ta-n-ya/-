@@ -6,13 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>Radio Buttons</h2>
-
-<form>
-  <input type="radio" name="gender" value="male" checked> Male<br>
-  <input type="radio" name="gender" value="female"> Female<br>
-  <input type="radio" name="gender" value="other"> Other  
-</form> 
+    <h2 align="center">Заполните анкету</h2>
+    <form action="http://fe.it-academy.by/TestForm.php" method="post">
+      <fieldset>
+        <legend>Личные данные</legend>
+        <input type="text"name="Фамилия"placeholder="Фамилия"
+        pattern="^[?!,.а-яА-ЯёЁ0-9]+$" required="required"autofocus>
+       </fieldset>
+    </form>    
+    
 
     
     
