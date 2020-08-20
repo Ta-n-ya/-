@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container{display: flex;display: inline-flex; flex-wrap: wrap;align-items: flex-start;}
+
+      .article {
+        background-color: gray;padding: 16px;margin-bottom: 2em;
+      }
+      .navigation {background-color: gainsboro;flex-basis: 15em;
+      }
+      .footer{background-color: gainsboro;flex-grow: 1; margin: 0em;}
+      .a{ display :flex;display: inline-block;flex-grow: 1;}
+      .img{text-align: right;}
+    
+    </style>
+  </head>
+  <body >
+  <div class="container"> 
+    <div class="navigation" >
+      <h3>Блок навигации</h3>
+      <ul>
+        <li>Ширина 15em</li>
+        <li>Должен присутствовать цвет фона</li>
+        <li>Располагается слева</li>
+        <li>
+          Блок навигации наполните контентом достаточным ,чтобы по высоте он
+          начинал захватывать вторую статью,как показано в данном примере.Блок навигации наполните контентом достаточным ,чтобы по высоте он
+          начинал захватывать вторую статью,как показано в данном примере
+        </li>
+      </ul>
+    </div>
+    <div class="a">
+      <div class="article">
+        <h3>Статья 1</h3>
+        <p>
+          Размер блока : Занимает всю доступную ширину <br />
+          Должен присутствовать цвет фона<br />
+          Во всех "статьях" сделайте отступ снизу от сoседей равным 2 em,при
+          помощи <br />свойства margin-bottom
+        </p 5>
+      </div>
+      <div class="article">
+        <h3>Статья 2</h3>
+        <p>
+            Размер блока : Занимает всю доступную ширину <br />
+            Должен присутствовать цвет фона<br />
+            Во всех "статьях" сделайте отступ снизу от соседей равным 2 em,при
+            помощи <br />свойства margin-bottom Картинка вставлена при помощи тега , плавание 
+            организовано по правому краю внутри данной статьи для этой картинки 
+          </p>
+          <div class="img">
+            <img src="../base/img/Newsletter-icon.png" alt="letter" >
+          </div>
+      </div>
+    </div>
+    <p class="footer">Нижний блок,подвал. Занимает всю доступную ширину.
+         Высота определяется помещенным внутрь контентом</p>
+  </div>    
+
+  </body>
+</html>
