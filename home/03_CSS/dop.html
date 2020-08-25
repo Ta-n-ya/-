@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      nav {
+        width: 100%;
+      }
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      a {
+        text-decoration: none;
+        color: blac;
+        line-height: 30px;
+      }
+      li {
+        border: 2px solid black;
+        border-radius: 5px;
+        float: left;
+        width: 150px;
+        height: 30px;
+        background-color: rgb(236, 233, 233);
+        padding: 5px;
+        text-align: center;
+      }
+      .item {
+        opacity: 0;
+        position: relative;
+        top: 5px;
+        left: -7px;
+      }
+      li:hover .item {
+        opacity: 1;
+        transition-property: all;
+        transition-duration: 1s;
+        transition-timing-function: ease-in, ease, linear;
+      }
+      li:hover {
+        background-color: rgb(95, 94, 94);
+      }
+      li,
+      .item {
+        transition-property: all;
+        transition-duration: 1s;
+        transition-timing-function: ease;
+      }
+
+      @media all and (max-width: 1000px) {
+        nav {
+          width: 300px;
+        }
+        ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+        a {
+          text-decoration: none;
+          color: black;
+          line-height: 30px;
+        }
+        li {
+          border: 2px solid black;
+          border-radius: 5px;
+          width: 150px;
+          background-color: rgb(236, 233, 233);
+          padding: 5px;
+          display: block;
+        }
+        .item {
+          opacity: o;
+          position: relative;
+          top: 0px;
+          left: 100px;
+        }
+        li:hover .item {
+          opacity: 1;
+          transition-property: all;
+          transition-duration: 1s;
+          transition-timing-function: ease-in, ease, linear;
+        }
+        li:hover {
+          background-color: rgb(95, 94, 94);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="menu">
+        <li><a href="#0"> Понедельник</a></li>
+        <li><a href="#0">Вторник</a></li>
+        <li>
+          <a href="#0">Среда</a>
+          <ul class="submenu">
+            <li class="item"><a href="#0">Завтрак</a></li>
+            <li class="item"><a href="#0">Обед</a></li>
+            <li class="item"><a href="#0">Ужин</a></li>
+          </ul>
+        </li>
+        <li><a href="#0">Четверг</a></li>
+        <li><a href="#0">Пятница</a></li>
+        <li><a href="#0">Суббота</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
